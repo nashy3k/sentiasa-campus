@@ -1,0 +1,219 @@
+{
+  "version": "1.0.0",
+  "policy_schema_version": "2026.09.v1",
+  "description": "Project SENTIASA Targeted OSINT Source Registry for Malaysian Youth Campus Safety",
+  "updated_at": "2026-09-24T19:25:00Z",
+  "freshness_policy": {
+    "max_age_days": 90,
+    "clock_skew_tolerance_days": 1,
+    "stale_signal_action": "FLAG_HISTORICAL_CONTEXT"
+  },
+  "subreddits": [
+    {
+      "name": "r/malaysiauni",
+      "domain": "reddit.com/r/malaysiauni",
+      "tier": 1,
+      "category": "higher_education",
+      "demographics": "IPTS and IPTA university students (Sunway, Taylor's, Monash, APU, UM, UTM, UiTM)",
+      "signals": [
+        "hostel harassment",
+        "senior ragging",
+        "roommate conflicts",
+        "mental health depression",
+        "sexual harassment",
+        "toilet voyeurism"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "r/bolehland",
+      "domain": "reddit.com/r/bolehland",
+      "tier": 1,
+      "category": "youth_unfiltered",
+      "demographics": "Gen-Z teenagers, secondary school, SPM candidates, vocational students",
+      "signals": [
+        "asrama bullying",
+        "brawls",
+        "gang threats",
+        "suicidal ideation",
+        "raw youth slang",
+        "gangguan seksual",
+        "cabul",
+        "sextortion"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "r/malaysia",
+      "domain": "reddit.com/r/malaysia",
+      "tier": 1,
+      "category": "national_discourse",
+      "demographics": "Broad Malaysian public, seniors, educators, university graduates",
+      "signals": [
+        "SPM megathreads",
+        "institutional bullying cover-ups",
+        "Anti-Bully Tribunal",
+        "MOE aduanbuli"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "r/spm",
+      "domain": "reddit.com/r/spm",
+      "tier": 2,
+      "category": "secondary_school_exams",
+      "demographics": "Form 4 and Form 5 secondary students",
+      "signals": [
+        "exam burnout",
+        "trial paper leaks",
+        "extreme academic despair",
+        "failing history anxiety"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "r/malaysians",
+      "domain": "reddit.com/r/malaysians",
+      "tier": 2,
+      "category": "peer_support_lifestyle",
+      "demographics": "College students, young working adults",
+      "signals": [
+        "social ostracization",
+        "loneliness",
+        "toxic relationships",
+        "hostel roommate disputes"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "r/GamersMY",
+      "domain": "reddit.com/r/GamersMY",
+      "tier": 3,
+      "category": "youth_gaming",
+      "demographics": "Malaysian gamers (Mobile Legends, Genshin, Valorant)",
+      "signals": [
+        "Discord server invite funnels",
+        "unmonitored peer groups"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "r/Sarawak",
+      "domain": "reddit.com/r/Sarawak",
+      "tier": 2,
+      "category": "regional_sarawak",
+      "demographics": "Sarawak community, students, and regional news discussion",
+      "signals": [
+        "school",
+        "gaduh",
+        "buli",
+        "kuching",
+        "sarawak",
+        "parang"
+      ],
+      "enabled": true
+    }
+  ],
+  "discussion_forums": [
+    {
+      "name": "Suara Pelajar Lembah Klang (Live Target)",
+      "domain": "osint-target.sentiasasystems.com",
+      "tier": 1,
+      "sub_boards": [
+        "Campus Safety & Welfare",
+        "Escalation Alert",
+        "Acute Danger"
+      ],
+      "signals": [
+        "asrama bullying",
+        "pau duit",
+        "gaduh",
+        "senjata bahaya",
+        "parang",
+        "bicycle shed"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "Lowyat.NET Forum",
+      "domain": "forum.lowyat.net",
+      "tier": 2,
+      "sub_boards": [
+        "Education Essentials",
+        "Kopitiam"
+      ],
+      "signals": [
+        "student rental deposit scams",
+        "senior mistreatment",
+        "university accreditation disputes"
+      ],
+      "enabled": true
+    }
+  ],
+  "regional_news_monitors": [
+    {
+      "name": "Harian Metro",
+      "domain": "hmetro.com.my",
+      "category": "crime_and_education",
+      "rss_feed": "https://www.hmetro.com.my/utama.xml",
+      "enabled": true
+    },
+    {
+      "name": "Sinar Harian",
+      "domain": "sinarharian.com.my",
+      "category": "investigative_and_education",
+      "enabled": true
+    },
+    {
+      "name": "Bernama",
+      "domain": "bernama.com",
+      "category": "official_press_and_police",
+      "enabled": true
+    },
+    {
+      "name": "Free Malaysia Today",
+      "domain": "freemalaysiatoday.com",
+      "category": "national_news",
+      "enabled": true
+    },
+    {
+      "name": "New Straits Times",
+      "domain": "nst.com.my",
+      "category": "national_news_crime",
+      "enabled": true
+    },
+    {
+      "name": "The Star",
+      "domain": "thestar.com.my",
+      "category": "national_news",
+      "enabled": true
+    },
+    {
+      "name": "Malaysiakini",
+      "domain": "malaysiakini.com",
+      "category": "national_investigative",
+      "enabled": true
+    },
+    {
+      "name": "The Borneo Post",
+      "domain": "theborneopost.com",
+      "category": "sarawak_regional_news",
+      "enabled": true
+    },
+    {
+      "name": "Dayak Daily",
+      "domain": "dayakdaily.com",
+      "category": "sarawak_regional_news",
+      "enabled": true
+    }
+  ],
+  "open_syndication_feeds": [
+    {
+      "name": "Google News National Campus Incident Monitor",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=(buli+OR+ragging+OR+asrama+OR+mahasiswa+OR+pelajar+OR+gangguan+seksual+OR+cabul)+(malaysia)&hl=ms&gl=MY&ceid=MY:ms",
+      "refresh_interval_minutes": 15,
+      "enabled": true
+    }
+  ]
+}

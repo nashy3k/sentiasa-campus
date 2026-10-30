@@ -1,0 +1,176 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "campus_id": "smk-seksyen-9",
+    "campus_name": "SMK Seksyen 9 Shah Alam",
+    "school_code": "BEA8629",
+    "district": "Petaling Perdana",
+    "state": "Selangor",
+    "category": "PREMIER_DAY_SCHOOL",
+    "blueprint_type": "JKR_STANDARD_SECONDARY",
+    "datum": "WGS84",
+    "center_coordinates": [101.5273, 3.0857],
+    "adjoining_primary_school": "SK Seksyen 9 Shah Alam",
+    "description": "Standardized BIM/GEOINT spatial topology for SMK Seksyen 9 Shah Alam (large premier day school adjoining SK Seksyen 9)."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ZONE_PERIMETER",
+      "properties": {
+        "zone_id": "ZONE_PERIMETER",
+        "name": "Sempadan Pagar Keselamatan Kampus SMK Seksyen 9",
+        "zone_type": "CAMPUS_PERIMETER",
+        "block_code": "PERIMETER",
+        "floor_level": 0,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "PARTIAL",
+        "risk_tier": 2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [101.5260, 3.0845],
+            [101.5290, 3.0845],
+            [101.5290, 3.0870],
+            [101.5260, 3.0870],
+            [101.5260, 3.0845]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ZONE_ADJOINING_SK9_GATE",
+      "properties": {
+        "zone_id": "ZONE_ADJOINING_SK9_GATE",
+        "name": "Pagar Sempadan Bersambung SK Seksyen 9",
+        "zone_type": "BLIND_SPOT_HIGH_RISK",
+        "block_code": "PINTU-SK9",
+        "floor_level": 0,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "NONE",
+        "risk_tier": 3,
+        "threat_profile": "Inter-school boundary transfer, after-school congregation & smoking."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [101.5285, 3.0855],
+            [101.5290, 3.0855],
+            [101.5290, 3.0862],
+            [101.5285, 3.0862],
+            [101.5285, 3.0855]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLOK_A_PENTADBIRAN",
+      "properties": {
+        "zone_id": "BLOK_A_PENTADBIRAN",
+        "name": "Blok A Pentadbiran & Bilik Guru",
+        "zone_type": "ADMINISTRATIVE",
+        "block_code": "BLOK A",
+        "floor_level": 1,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "FULL",
+        "risk_tier": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [101.5268, 3.0852],
+            [101.5274, 3.0852],
+            [101.5274, 3.0858],
+            [101.5268, 3.0858],
+            [101.5268, 3.0852]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLOK_C_TINGKAT_ATAS",
+      "properties": {
+        "zone_id": "BLOK_C_TINGKAT_ATAS",
+        "name": "Blok C Aras 3 (Tandas & Tangga Belakang)",
+        "zone_type": "BLIND_SPOT_HIGH_RISK",
+        "block_code": "BLOK C",
+        "floor_level": 3,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "NONE",
+        "risk_tier": 4,
+        "threat_profile": "Upper stairwell isolation & verbal/physical intimidation."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [101.5276, 3.0852],
+            [101.5282, 3.0852],
+            [101.5282, 3.0858],
+            [101.5276, 3.0858],
+            [101.5276, 3.0852]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MEDAN_SELERA_KANTIN",
+      "properties": {
+        "zone_id": "MEDAN_SELERA_KANTIN",
+        "name": "Kantin & Foyer Murid",
+        "zone_type": "COMMUNAL",
+        "block_code": "KANTIN",
+        "floor_level": 0,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "FULL",
+        "risk_tier": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [101.5265, 3.0848],
+            [101.5272, 3.0848],
+            [101.5272, 3.0853],
+            [101.5265, 3.0853],
+            [101.5265, 3.0848]
+          ]
+        ]
+      }
+    }
+  ],
+  "cctv_cameras": [
+    {
+      "camera_id": "CAM-01-SK9-PERIMETER",
+      "name": "CCTV-01 Pagar Sempadan Bersambung SK Seksyen 9",
+      "stream_url": "rtsp://edge.smk9.internal:554/live/cam01",
+      "coordinates": [101.5286, 3.0857],
+      "bearing_degrees": 90.0,
+      "fov_degrees": 75.0,
+      "range_meters": 35.0,
+      "monitors_zone": "ZONE_ADJOINING_SK9_GATE",
+      "resolution": "1080p_30fps",
+      "active": true
+    },
+    {
+      "camera_id": "CAM-02-MAIN-GATE",
+      "name": "CCTV-02 Pintu Utama & Dataran Seksyen 9",
+      "stream_url": "rtsp://edge.smk9.internal:554/live/cam02",
+      "coordinates": [101.5266, 3.0850],
+      "bearing_degrees": 45.0,
+      "fov_degrees": 80.0,
+      "range_meters": 40.0,
+      "monitors_zone": "BLOK_A_PENTADBIRAN",
+      "resolution": "1080p_30fps",
+      "active": true
+    }
+  ]
+}

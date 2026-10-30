@@ -1,0 +1,356 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "campus_id": "smk-seksyen-11",
+    "campus_name": "SMK Seksyen 11 Shah Alam",
+    "school_code": "BEA8616",
+    "district": "Petaling Perdana",
+    "state": "Selangor",
+    "category": "HYBRID_DAY_AND_BOARDING",
+    "blueprint_type": "SBP_RESIDENTIAL_CAMPUS",
+    "datum": "WGS84",
+    "center_coordinates": [101.5284, 3.0782],
+    "description": "Standardized BIM/GEOINT spatial topology for SMK Seksyen 11 Shah Alam (Hybrid Day School & SSN Sports Residential Hostel)."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ZONE_PERIMETER",
+      "properties": {
+        "zone_id": "ZONE_PERIMETER",
+        "name": "Sempadan Pagar Keselamatan Kampus (Perimeter Fence)",
+        "zone_type": "CAMPUS_PERIMETER",
+        "block_code": "PERIMETER",
+        "floor_level": 0,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "PARTIAL",
+        "risk_tier": 2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [101.5270, 3.0770],
+            [101.5300, 3.0770],
+            [101.5300, 3.0795],
+            [101.5270, 3.0795],
+            [101.5270, 3.0770]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLOK_A_PENTADBIRAN",
+      "properties": {
+        "zone_id": "BLOK_A_PENTADBIRAN",
+        "name": "Blok A Pentadbiran & Bilik Guru",
+        "zone_type": "ADMINISTRATIVE",
+        "block_code": "BLOK A",
+        "floor_level": 1,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "FULL",
+        "risk_tier": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [101.5275, 3.0778],
+            [101.5281, 3.0778],
+            [101.5281, 3.0783],
+            [101.5275, 3.0783],
+            [101.5275, 3.0778]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLOK_B_AKADEMIK",
+      "properties": {
+        "zone_id": "BLOK_B_AKADEMIK",
+        "name": "Blok B Akademik & Makmal Sains",
+        "zone_type": "ACADEMIC",
+        "block_code": "BLOK B",
+        "floor_level": 1,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "FULL",
+        "risk_tier": 2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [101.5283, 3.0778],
+            [101.5289, 3.0778],
+            [101.5289, 3.0783],
+            [101.5283, 3.0783],
+            [101.5283, 3.0778]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLOK_ASRAMA_ASPURA",
+      "properties": {
+        "zone_id": "BLOK_ASRAMA_ASPURA",
+        "name": "Kompleks Asrama Putera (ASPURA) - Blok Kenanga",
+        "zone_type": "RESIDENTIAL_HOSTEL",
+        "block_code": "ASPURA",
+        "floor_level": 3,
+        "is_sanctuary": true,
+        "curfew_active": true,
+        "cctv_coverage_status": "CORRIDOR_ONLY",
+        "risk_tier": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [101.5285, 3.0786],
+            [101.5295, 3.0786],
+            [101.5295, 3.0792],
+            [101.5285, 3.0792],
+            [101.5285, 3.0786]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HOTSPOT_BILIK_IRON",
+      "properties": {
+        "zone_id": "HOTSPOT_BILIK_IRON",
+        "name": "Bilik Menggosok & Dobi Aras 2 ASPURA",
+        "zone_type": "BLIND_SPOT_HIGH_RISK",
+        "block_code": "ASPURA-L2",
+        "floor_level": 2,
+        "is_sanctuary": true,
+        "curfew_active": true,
+        "cctv_coverage_status": "NONE",
+        "risk_tier": 5,
+        "threat_profile": "Hostel roll-call extortion, hazing & physical coercion."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [101.5286, 3.0787],
+            [101.5288, 3.0787],
+            [101.5288, 3.0789],
+            [101.5286, 3.0789],
+            [101.5286, 3.0787]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HOTSPOT_BELAKANG_KANTIN",
+      "properties": {
+        "zone_id": "HOTSPOT_BELAKANG_KANTIN",
+        "name": "Belakang Kantin & Rumah Sampah",
+        "zone_type": "BLIND_SPOT_HIGH_RISK",
+        "block_code": "KANTIN-REAR",
+        "floor_level": 0,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "NONE",
+        "risk_tier": 4,
+        "threat_profile": "Extortion shake-down (pau duit), smoking, weapon drop."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [101.5273, 3.0772],
+            [101.5277, 3.0772],
+            [101.5277, 3.0775],
+            [101.5273, 3.0775],
+            [101.5273, 3.0772]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HOTSPOT_PINTU_BELAKANG",
+      "properties": {
+        "zone_id": "HOTSPOT_PINTU_BELAKANG",
+        "name": "Pintu Pagar Belakang & Pondok Basikal",
+        "zone_type": "BLIND_SPOT_HIGH_RISK",
+        "block_code": "PINTU-BELAKANG",
+        "floor_level": 0,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "PARTIAL",
+        "risk_tier": 5,
+        "threat_profile": "Post-dispersal ambush, weapon drop, rival gang ingress."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [101.5292, 3.0771],
+            [101.5298, 3.0771],
+            [101.5298, 3.0774],
+            [101.5292, 3.0774],
+            [101.5292, 3.0771]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PADANG_DAN_TREK",
+      "properties": {
+        "zone_id": "PADANG_DAN_TREK",
+        "name": "Padang Bola & Trek Olahraga SSN",
+        "zone_type": "RECREATIONAL",
+        "block_code": "PADANG",
+        "floor_level": 0,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "PARTIAL",
+        "risk_tier": 2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [101.5273, 3.0784],
+            [101.5283, 3.0784],
+            [101.5283, 3.0793],
+            [101.5273, 3.0793],
+            [101.5273, 3.0784]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEWAN_DAN_KANTIN",
+      "properties": {
+        "zone_id": "DEWAN_DAN_KANTIN",
+        "name": "Dewan Besar & Medan Selera Kantin",
+        "zone_type": "COMMUNAL",
+        "block_code": "DEWAN-KANTIN",
+        "floor_level": 1,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "FULL",
+        "risk_tier": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [101.5277, 3.0772],
+            [101.5283, 3.0772],
+            [101.5283, 3.0777],
+            [101.5277, 3.0777],
+            [101.5277, 3.0772]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PINTU_UTAMA_POS_PENGAWAL",
+      "properties": {
+        "zone_id": "PINTU_UTAMA_POS_PENGAWAL",
+        "name": "Pintu Utama & Pos Pengawal Keselamatan",
+        "zone_type": "CONTROLLED_INGRESS",
+        "block_code": "PINTU-UTAMA",
+        "floor_level": 0,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "FULL",
+        "risk_tier": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [101.5271, 3.0771],
+            [101.5274, 3.0771],
+            [101.5274, 3.0774],
+            [101.5271, 3.0774],
+            [101.5271, 3.0771]
+          ]
+        ]
+      }
+    }
+  ],
+  "cctv_cameras": [
+    {
+      "camera_id": "CAM-01-MAIN-GATE",
+      "name": "CCTV-01 Pintu Gerbang Utama & Akses Masuk",
+      "stream_url": "rtsp://edge.smk11.internal:554/live/cam01",
+      "coordinates": [101.5272, 3.0772],
+      "bearing_degrees": 45.0,
+      "fov_degrees": 75.0,
+      "range_meters": 40.0,
+      "monitors_zone": "PINTU_UTAMA_POS_PENGAWAL",
+      "resolution": "1080p_60fps",
+      "active": true
+    },
+    {
+      "camera_id": "CAM-02-FOYER-ADMIN",
+      "name": "CCTV-02 Foyer Blok A & Medan Perhimpunan",
+      "stream_url": "rtsp://edge.smk11.internal:554/live/cam02",
+      "coordinates": [101.5278, 3.0779],
+      "bearing_degrees": 90.0,
+      "fov_degrees": 80.0,
+      "range_meters": 35.0,
+      "monitors_zone": "BLOK_A_PENTADBIRAN",
+      "resolution": "1080p_30fps",
+      "active": true
+    },
+    {
+      "camera_id": "CAM-03-CANTEEN-FRONT",
+      "name": "CCTV-03 Medan Selera Kantin & Koridor Timur",
+      "stream_url": "rtsp://edge.smk11.internal:554/live/cam03",
+      "coordinates": [101.5278, 3.0774],
+      "bearing_degrees": 180.0,
+      "fov_degrees": 70.0,
+      "range_meters": 30.0,
+      "monitors_zone": "DEWAN_DAN_KANTIN",
+      "resolution": "1080p_30fps",
+      "active": true
+    },
+    {
+      "camera_id": "CAM-04-REAR-GATE-DEPOT",
+      "name": "CCTV-04 Pintu Belakang & Pondok Basikal Perimeter",
+      "stream_url": "rtsp://edge.smk11.internal:554/live/cam04",
+      "coordinates": [101.5293, 3.0772],
+      "bearing_degrees": 270.0,
+      "fov_degrees": 75.0,
+      "range_meters": 35.0,
+      "monitors_zone": "HOTSPOT_PINTU_BELAKANG",
+      "resolution": "1080p_30fps",
+      "active": true
+    },
+    {
+      "camera_id": "CAM-05-HOSTEL-CORRIDOR",
+      "name": "CCTV-05 Koridor Luar & Tangga Keselamatan ASPURA",
+      "stream_url": "rtsp://edge.smk11.internal:554/live/cam05",
+      "coordinates": [101.5288, 3.0788],
+      "bearing_degrees": 0.0,
+      "fov_degrees": 70.0,
+      "range_meters": 35.0,
+      "monitors_zone": "BLOK_ASRAMA_ASPURA",
+      "resolution": "1080p_30fps",
+      "active": true
+    },
+    {
+      "camera_id": "CAM-06-TRACK-SPORTS",
+      "name": "CCTV-06 Padang Sintetik & Kompleks Sukan",
+      "stream_url": "rtsp://edge.smk11.internal:554/live/cam06",
+      "coordinates": [101.5277, 3.0788],
+      "bearing_degrees": 45.0,
+      "fov_degrees": 85.0,
+      "range_meters": 50.0,
+      "monitors_zone": "PADANG_DAN_TREK",
+      "resolution": "1080p_30fps",
+      "active": true
+    }
+  ]
+}

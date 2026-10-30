@@ -1,0 +1,174 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "campus_id": "smk-kuching-high",
+    "campus_name": "SMK Kuching High (Sarawak)",
+    "school_code": "YEB1201",
+    "district": "Kuching",
+    "state": "Sarawak",
+    "category": "CONFORMING_SECONDARY_SCHOOL",
+    "blueprint_type": "JKR_STANDARD_SECONDARY",
+    "datum": "WGS84",
+    "center_coordinates": [110.3592, 1.5533],
+    "description": "Standardized BIM/GEOINT spatial topology for SMK Kuching High (Jalan Mathies, Kuching, Sarawak)."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ZONE_PERIMETER",
+      "properties": {
+        "zone_id": "ZONE_PERIMETER",
+        "name": "Sempadan Pagar Keselamatan Kampus SMK Kuching High",
+        "zone_type": "CAMPUS_PERIMETER",
+        "block_code": "PERIMETER",
+        "floor_level": 0,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "PARTIAL",
+        "risk_tier": 2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [110.3575, 1.5520],
+            [110.3610, 1.5520],
+            [110.3610, 1.5548],
+            [110.3575, 1.5548],
+            [110.3575, 1.5520]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PINTU_PAGAR_BELAKANG",
+      "properties": {
+        "zone_id": "PINTU_PAGAR_BELAKANG",
+        "name": "Pintu Pagar Belakang & Lorong Jalan Mathies",
+        "zone_type": "BLIND_SPOT_HIGH_RISK",
+        "block_code": "PAGAR-BELAKANG",
+        "floor_level": 0,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "NONE",
+        "risk_tier": 4,
+        "threat_profile": "Perimeter blind spot, congregation point & external youth confrontation."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [110.3602, 1.5522],
+            [110.3609, 1.5522],
+            [110.3609, 1.5528],
+            [110.3602, 1.5528],
+            [110.3602, 1.5522]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLOK_A_PENTADBIRAN",
+      "properties": {
+        "zone_id": "BLOK_A_PENTADBIRAN",
+        "name": "Blok A Pentadbiran & Bilik Guru",
+        "zone_type": "ADMINISTRATIVE",
+        "block_code": "BLOK A",
+        "floor_level": 1,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "FULL",
+        "risk_tier": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [110.3582, 1.5530],
+            [110.3590, 1.5530],
+            [110.3590, 1.5538],
+            [110.3582, 1.5538],
+            [110.3582, 1.5530]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLOK_B_AKADEMIK",
+      "properties": {
+        "zone_id": "BLOK_B_AKADEMIK",
+        "name": "Blok B Bilik Darjah & Makmal Sains",
+        "zone_type": "ACADEMIC",
+        "block_code": "BLOK B",
+        "floor_level": 2,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "PARTIAL",
+        "risk_tier": 2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [110.3592, 1.5532],
+            [110.3600, 1.5532],
+            [110.3600, 1.5542],
+            [110.3592, 1.5542],
+            [110.3592, 1.5532]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MEDAN_SELERA_KANTIN",
+      "properties": {
+        "zone_id": "MEDAN_SELERA_KANTIN",
+        "name": "Kantin Murid & Dataran Utama",
+        "zone_type": "COMMUNAL",
+        "block_code": "KANTIN",
+        "floor_level": 0,
+        "is_sanctuary": false,
+        "cctv_coverage_status": "FULL",
+        "risk_tier": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [110.3584, 1.5524],
+            [110.3592, 1.5524],
+            [110.3592, 1.5529],
+            [110.3584, 1.5529],
+            [110.3584, 1.5524]
+          ]
+        ]
+      }
+    }
+  ],
+  "cctv_cameras": [
+    {
+      "camera_id": "CAM-01-KUCHING-REARGATE",
+      "name": "CCTV-01 Pagar Belakang Jalan Mathies",
+      "stream_url": "rtsp://edge.kuchinghigh.internal:554/live/cam01",
+      "coordinates": [110.3605, 1.5525],
+      "bearing_degrees": 180.0,
+      "fov_degrees": 85.0,
+      "range_meters": 40.0,
+      "monitors_zone": "PINTU_PAGAR_BELAKANG",
+      "resolution": "1080p_30fps",
+      "active": true
+    },
+    {
+      "camera_id": "CAM-02-KUCHING-FOYER",
+      "name": "CCTV-02 Pintu Utama & Foyer Pentadbiran",
+      "stream_url": "rtsp://edge.kuchinghigh.internal:554/live/cam02",
+      "coordinates": [110.3585, 1.5532],
+      "bearing_degrees": 90.0,
+      "fov_degrees": 75.0,
+      "range_meters": 35.0,
+      "monitors_zone": "BLOK_A_PENTADBIRAN",
+      "resolution": "1080p_30fps",
+      "active": true
+    }
+  ]
+}

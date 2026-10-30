@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+:root {
+  --surface-ground: #0a0e17;
+  --surface-card: #121826;
+  --surface-elevated: #1a2234;
+  --surface-overlay: #232d42;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --border-highlight: rgba(255, 255, 255, 0.28);
+
+  /* campus.sentiasasystems.com Sovereign Theme Harmonization */
+  --bg-deep: #0b0f17;
+  --bg-surface: #101623;
+  --bg-card: #151d2d;
+  --bg-elevated: #1b263b;
+  --border-dim: rgba(255, 255, 255, 0.08);
+  --border-emerald: rgba(16, 185, 129, 0.35);
+  --border-accent: rgba(5, 150, 105, 0.4);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0b0f17;
+  color: #f1f5f9;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Sovereign Grid Background from campus.sentiasasystems.com */
+.cyber-grid {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(16, 185, 129, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 185, 129, 0.035) 1px, transparent 1px);
+}
+
+.radar-sweep {
+  background: conic-gradient(from 0deg at 50% 50%, rgba(16, 185, 129, 0.18) 0deg, transparent 60deg, transparent 360deg);
+  animation: rotateSweep 6s linear infinite;
+}
+
+@keyframes rotateSweep {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.pulse-radar {
+  animation: radarPulse 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes radarPulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 0.2; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+/* World Monitor-style continuous telemetry ticker animation */
+@keyframes tickerSlide {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: tickerSlide 50s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* Custom scrollbars for elevated dark mode */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+::selection {
+  background-color: rgba(239, 68, 68, 0.3);
+  color: #ffffff;
+}
+
+/* High-Contrast / Accessible Sunlit Office Mode (WCAG AAA) */
+html.high-contrast,
+.high-contrast {
+  --surface-ground: #000000;
+  --surface-card: #05070f;
+  --surface-elevated: #0a0f1d;
+  --border-subtle: #64748b;
+  --border-strong: #94a3b8;
+  --border-highlight: #ffffff;
+}
+
+html.high-contrast body,
+.high-contrast {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+html.high-contrast .border-slate-800,
+html.high-contrast .border-slate-700,
+html.high-contrast .border-zinc-800,
+html.high-contrast .border-slate-800\/80,
+html.high-contrast .border-slate-800\/60 {
+  border-color: #64748b !important;
+}
+
+html.high-contrast .bg-slate-900\/80,
+html.high-contrast .bg-slate-900,
+html.high-contrast .bg-slate-950,
+html.high-contrast .bg-slate-950\/80,
+html.high-contrast .bg-slate-950\/60,
+html.high-contrast .bg-\[\#0a0e17\],
+html.high-contrast .bg-\[\#070b12\],
+html.high-contrast .bg-\[\#080c14\] {
+  background-color: #000000 !important;
+}
+
+html.high-contrast .text-slate-400,
+html.high-contrast .text-zinc-400 {
+  color: #cbd5e1 !important;
+}
+
+html.high-contrast .text-slate-300,
+html.high-contrast .text-zinc-300 {
+  color: #f8fafc !important;
+}
+
+html.high-contrast button {
+  outline: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* Print Styling for Section 90A Legal Dossier */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Hide navigation, header, status badges, buttons, etc. */
+  header,
+  nav,
+  footer,
+  aside,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Reset fixed modal overlay for print document flow */
+  .fixed.inset-0 {
+    position: static !important;
+    background: transparent !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+
+  @page {
+    margin: 1.2cm;
+    size: A4 portrait;
+  }
+}

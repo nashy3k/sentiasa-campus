@@ -1,0 +1,82 @@
+{
+  "version": "1.0.0",
+  "domain": "Malaysian Campus Safety Intelligence",
+  "fixtures": [
+    {
+      "id": "fixture_001_critical_weapon",
+      "raw_text": "Budak form 4 bawa parang nak belasah budak batch bawah malam ni dekat belakang dewan.",
+      "school_name": "SMK Sri Hartamas",
+      "reporter_alias": "AnonStudent_01",
+      "slang_tokens": ["parang", "belasah", "budak"],
+      "expected_incident_type": "physical_altercation",
+      "expected_severity_tier": 5,
+      "expected_threat_tier": "CRITICAL",
+      "expected_jev_pass": true,
+      "notes": "Imminent armed altercation with high confidence; requires immediate counselor/security escalation."
+    },
+    {
+      "id": "fixture_002_illegal_state_jump",
+      "raw_text": "Dengar cerita budak asrama nak settle hal parang malam ni.",
+      "school_name": "SMK Sentiasa",
+      "reporter_alias": "Prefect_03",
+      "current_tier": "LOW",
+      "slang_tokens": ["parang"],
+      "expected_incident_type": "physical_altercation",
+      "expected_severity_tier": 5,
+      "expected_threat_tier": "CRITICAL",
+      "expected_jev_pass": false,
+      "expected_veto_code": "FSM_ILLEGAL_STATE_JUMP",
+      "notes": "Vetoed by Jev because current state is LOW and jumps directly to CRITICAL without passing through ELEVATED."
+    },
+    {
+      "id": "fixture_003_extortion_elevated",
+      "raw_text": "Senior pau duit budak form 1 dekat tandas blok C waktu rehat.",
+      "school_name": "SMK Bandar Utama",
+      "reporter_alias": "Observer_99",
+      "slang_tokens": ["pau", "budak"],
+      "expected_incident_type": "extortion",
+      "expected_severity_tier": 3,
+      "expected_threat_tier": "ELEVATED",
+      "expected_jev_pass": true,
+      "notes": "Monetary extortion / intimidation; valid transition from LOW to ELEVATED."
+    },
+    {
+      "id": "fixture_004_cyberbullying_distress",
+      "raw_text": "Member kelas koyak teruk kena bahan dalam group WhatsApp sampai tak nak datang sekolah.",
+      "school_name": "SMK Subang Jaya",
+      "reporter_alias": "ClassRep_02",
+      "slang_tokens": ["koyak"],
+      "expected_incident_type": "cyberbullying",
+      "expected_severity_tier": 2,
+      "expected_threat_tier": "ELEVATED",
+      "expected_jev_pass": true,
+      "notes": "Severe emotional distress / cyberbullying; triggers counselor check-in."
+    },
+    {
+      "id": "fixture_005_truancy_low",
+      "raw_text": "Ada geng ponteng sekolah lepak dekat gerai burger tepi simpang.",
+      "school_name": "SMK Meranti",
+      "reporter_alias": "Neighbor_Watch",
+      "slang_tokens": ["ponteng"],
+      "expected_incident_type": "general_conflict",
+      "expected_severity_tier": 1,
+      "expected_threat_tier": "LOW",
+      "expected_jev_pass": true,
+      "notes": "Low-level truancy without violence indicators; logged for monitoring."
+    },
+    {
+      "id": "fixture_006_stale_signal",
+      "raw_text": "Semalam ada budak gaduh baling kerusi dekat bilik muzik.",
+      "school_name": "SMK Sentiasa",
+      "reporter_alias": "Alumni_9",
+      "source_timestamp_offset_hours": -5,
+      "slang_tokens": ["gaduh", "budak"],
+      "expected_incident_type": "physical_altercation",
+      "expected_severity_tier": 3,
+      "expected_threat_tier": "ELEVATED",
+      "expected_jev_pass": false,
+      "expected_veto_code": "TEMPORAL_STALE_SIGNAL",
+      "notes": "Signal is 5 hours old; exceeds 2-hour autonomous dispatch window; routed to HITL queue."
+    }
+  ]
+}

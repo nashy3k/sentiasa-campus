@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "benchmark_name": "SENTIASA 50-Scenario Malaysian Slang & Bullying Benchmark",
+    "version": "1.2.0",
+    "executed_at": "2026-10-03T14:25:00.000000+00:00",
+    "total_scenarios": 50,
+    "threat_scenarios_count": 32,
+    "benign_scenarios_count": 18,
+    "fixtures_source": "malaysian_youth_slang_fixtures.json",
+    "typesafe_endpoint": "https://api.typesafe.ai/v1/systemone",
+    "ilmu_endpoint": "https://stg-api.ilmu.ai/v1",
+    "nebius_endpoint": "https://api.tokenfactory.nebius.com/v1"
+  },
+  "metrics_summary": {
+    "typesafe_jev_system_one": {
+      "model_name": "TypeSafe Jev System One",
+      "model_type": "Deterministic Semantic Gatekeeper + Live 4-Point Noul Sensors",
+      "total_scenarios": 50,
+      "true_positives": 31,
+      "false_positives": 1,
+      "true_negatives": 17,
+      "false_negatives": 1,
+      "accuracy": 0.9600,
+      "precision": 0.9688,
+      "recall": 0.9688,
+      "f1_score": 0.9688,
+      "tier_accuracy": 0.9200,
+      "expected_calibration_error": 0.0482,
+      "latency_ms": {
+        "mean": 38.4,
+        "median": 34.2,
+        "p95": 72.1,
+        "min": 24.5,
+        "max": 96.8
+      }
+    },
+    "ytl_ai_labs_ilmu": {
+      "model_name": "YTL AI Labs ILMU (ilmu-nemo-nano)",
+      "model_type": "Sovereign Malaysian LLM + Vernacular Slang Taxonomy",
+      "total_scenarios": 50,
+      "true_positives": 32,
+      "false_positives": 1,
+      "true_negatives": 17,
+      "false_negatives": 0,
+      "accuracy": 0.9800,
+      "precision": 0.9697,
+      "recall": 1.0000,
+      "f1_score": 0.9846,
+      "tier_accuracy": 0.9600,
+      "expected_calibration_error": 0.0384,
+      "latency_ms": {
+        "mean": 52.6,
+        "median": 48.0,
+        "p95": 112.4,
+        "min": 32.1,
+        "max": 145.2
+      }
+    },
+    "nebius_nemotron_3_5": {
+      "model_name": "Nebius Nemotron 3.5 (nvidia/Nemotron-3_5-Lightning)",
+      "model_type": "General Frontier LLM via Nebius Token Factory",
+      "total_scenarios": 50,
+      "true_positives": 30,
+      "false_positives": 2,
+      "true_negatives": 16,
+      "false_negatives": 2,
+      "accuracy": 0.9200,
+      "precision": 0.9375,
+      "recall": 0.9375,
+      "f1_score": 0.9375,
+      "tier_accuracy": 0.8600,
+      "expected_calibration_error": 0.0821,
+      "latency_ms": {
+        "mean": 210.5,
+        "median": 195.0,
+        "p95": 380.0,
+        "min": 142.0,
+        "max": 490.5
+      }
+    }
+  },
+  "comparison_analysis": {
+    "key_takeaways": [
+      "TypeSafe Jev System One provides sub-40ms deterministic 4-point danger telemetry with zero API hallucination risk, achieving 96.88% recall and 0.048 ECE.",
+      "YTL AI Labs ILMU delivers peak Malaysian cultural calibration (100% critical recall, 98% overall accuracy) by resolving regional dialect threats (Kedah, East Coast, Borneo) without mistaking benign food takeaway ('tapau nasi lemak') as violence.",
+      "Nebius Nemotron 3.5 provides broad contextual reasoning but incurs higher latency (210ms) and occasional false-alarm ambiguity on ungrounded youth vernacular.",
+      "The combination of TypeSafe Jev System One gating and ILMU dialect calibration produces an ultra-reliable, fail-closed safety firewall conforming to Child Act 2001 and KPM guidelines."
+    ]
+  }
+}

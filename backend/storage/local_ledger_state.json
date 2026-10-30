@@ -1,0 +1,216 @@
+{
+  "incidents": {
+    "incident-parang": {
+      "incident_id": "incident-parang",
+      "tenant_id": "smk-kuching-high",
+      "severity_tier": 5,
+      "threat_tier": "CRITICAL",
+      "school": {
+        "school_id": "school-smk-seksyen-11",
+        "name": "SMK Seksyen 11 Shah Alam",
+        "district": "Petaling Perdana"
+      },
+      "matched_zone_id": "HOTSPOT_PINTU_BELAKANG",
+      "matched_zone_name": "Pintu Belakang & Laluan Stadium",
+      "spatial_coordinates": [
+        101.5295,
+        3.0772
+      ],
+      "threat_event": {
+        "event_id": "incident-parang",
+        "incident_type": "physical_altercation",
+        "raw_text": "Budak form 4 bawa parang nak belasah budak batch bawah kat luar pintu pagar belakang.",
+        "severity_tier": 5,
+        "threat_tier": "CRITICAL",
+        "confidence_score": 0.96,
+        "context_summary": "Multiple student messages indicate acute weapon-related confrontation near rear gate after class.",
+        "extracted_slang_tokens": [
+          "parang",
+          "belasah",
+          "jumpa belakang"
+        ]
+      },
+      "jev_passed": true,
+      "jev_evaluation": {
+        "passed": true,
+        "veto_reason": null,
+        "suggested_action": "TRIGGER_CAMPUS_DISPATCH",
+        "semantic_confidence": 0.96,
+        "semantic_danger_probability": 0.94
+      },
+      "jev_telemetry": {
+        "imminent_violence": 0.95,
+        "weapon_threat": 0.98,
+        "extortion_coercion": 0.12,
+        "victim_distress": 0.74
+      },
+      "external_citations": [
+        {
+          "title": "Suara Pelajar: Senjata Bahaya Pagar Belakang (Bicycle Shed)",
+          "url": "https://osint-target.sentiasasystems.com/threads/senjata-bahaya-pagar-belakang/",
+          "platform": "suara_pelajar_target",
+          "engine": "suara_pelajar_direct",
+          "highlights": [
+            "[Target Signal]: Watak rekaan melaporkan objek prop tumpul berbalut kain dekat shed basikal."
+          ]
+        },
+        {
+          "title": "r/malaysiauni - Campus Security & Anti-Violence Community Portal",
+          "url": "https://www.reddit.com/r/malaysiauni/",
+          "platform": "reddit",
+          "engine": "tavily",
+          "highlights": [
+            "Student community warnings and verification regarding perimeter threats near secondary school gates."
+          ]
+        }
+      ],
+      "created_at": "2026-10-29T11:13:43.683144+00:00"
+    },
+    "incident-fight": {
+      "incident_id": "incident-fight",
+      "tenant_id": "smk-kuching-high",
+      "severity_tier": 4,
+      "threat_tier": "ELEVATED",
+      "school": {
+        "school_id": "school-smk-seksyen-9",
+        "name": "SMK Seksyen 9 Shah Alam",
+        "district": "Petaling Perdana"
+      },
+      "matched_zone_id": "ZONE_BLOK_C_L3",
+      "matched_zone_name": "Blok C Aras 3 (Tandas Belakang)",
+      "spatial_coordinates": [
+        101.5273,
+        3.0857
+      ],
+      "threat_event": {
+        "event_id": "incident-fight",
+        "incident_type": "physical_altercation",
+        "raw_text": "Dengar cerita budak asrama nak settle hal semalam dekat blok C petang ni.",
+        "severity_tier": 4,
+        "threat_tier": "ELEVATED",
+        "confidence_score": 0.88,
+        "context_summary": "Escalating tension between student cohorts. Vernacular indicates imminent scuffle after prep.",
+        "extracted_slang_tokens": [
+          "koyak",
+          "settle luar",
+          "asrama"
+        ]
+      },
+      "jev_passed": true,
+      "jev_evaluation": {
+        "passed": true,
+        "veto_reason": null,
+        "suggested_action": "ESCALATE_THREAT_TIER",
+        "semantic_confidence": 0.88,
+        "semantic_danger_probability": 0.82
+      },
+      "jev_telemetry": {
+        "imminent_violence": 0.88,
+        "weapon_threat": 0.15,
+        "extortion_coercion": 0.2,
+        "victim_distress": 0.65
+      },
+      "external_citations": [
+        {
+          "title": "Suara Pelajar: Amaran Group Budak Seksyen 9 Nak Jumpa Belakang ('Settle Luar')",
+          "url": "https://osint-target.sentiasasystems.com/threads/pergaduhan-rendezvous-belakang-sekolah/",
+          "platform": "suara_pelajar_target",
+          "engine": "suara_pelajar_direct",
+          "highlights": [
+            "[Target Signal]: Nampak chat Telegram rekaan beredar pasal pelajar fiksyen Seksyen 9 nak turun naik motor petang ni dekat area pondok basikal."
+          ]
+        },
+        {
+          "title": "Lowyat.NET Education - Student Welfare & Campus Discussions",
+          "url": "https://forum.lowyat.net/Education",
+          "platform": "lowyat",
+          "engine": "exa",
+          "highlights": [
+            "Campus peer conflict and dorm tension escalated to physical confrontation threats."
+          ]
+        }
+      ],
+      "video_filename": "clip_physical_altercation.mp4",
+      "video_clips": [
+        "clip_physical_altercation.mp4"
+      ],
+      "keyframe_timestamps": [
+        1.2,
+        3.4
+      ],
+      "created_at": "2026-10-29T11:13:43.683875+00:00"
+    },
+    "incident-bullying": {
+      "incident_id": "incident-bullying",
+      "tenant_id": "smk-kuching-high",
+      "severity_tier": 2,
+      "threat_tier": "LOW",
+      "school": {
+        "school_id": "school-smk-seksyen-11",
+        "name": "SMK Seksyen 11 Shah Alam",
+        "district": "Petaling Perdana"
+      },
+      "matched_zone_id": "HOTSPOT_BILIK_IRON",
+      "matched_zone_name": "Bilik Menggosok & Dobi ASPURA Aras 2",
+      "spatial_coordinates": [
+        101.5287,
+        3.0788
+      ],
+      "threat_event": {
+        "event_id": "incident-bullying",
+        "incident_type": "cyberbullying",
+        "raw_text": "Member kelas koyak teruk kena bahan dalam group WhatsApp sampai tak nak datang sekolah.",
+        "severity_tier": 2,
+        "threat_tier": "LOW",
+        "confidence_score": 0.91,
+        "context_summary": "Repeated hostile mocking directed at a junior student causing classroom absenteeism.",
+        "extracted_slang_tokens": [
+          "bahan",
+          "koyak",
+          "malu"
+        ]
+      },
+      "jev_passed": true,
+      "jev_evaluation": {
+        "passed": true,
+        "veto_reason": null,
+        "suggested_action": "LOG_TELEMETRY",
+        "semantic_confidence": 0.91,
+        "semantic_danger_probability": 0.35
+      },
+      "jev_telemetry": {
+        "imminent_violence": 0.18,
+        "weapon_threat": 0.04,
+        "extortion_coercion": 0.82,
+        "victim_distress": 0.79
+      },
+      "external_citations": [
+        {
+          "title": "Suara Pelajar: Ada Senior Mintak Pau Duit RM50 Tandas Blok C",
+          "url": "https://osint-target.sentiasasystems.com/threads/extortion-block-c-seksyen-11/",
+          "platform": "suara_pelajar_target",
+          "engine": "suara_pelajar_direct",
+          "highlights": [
+            "[Target Signal]: Dua pelajar senior tahan seorang pelajar junior dalam tandas Blok C ugut nak tapau kalau tak bayar RM50."
+          ]
+        },
+        {
+          "title": "r/malaysia - National Student Well-Being & Anti-Bullying Portal",
+          "url": "https://www.reddit.com/r/malaysia/",
+          "platform": "reddit",
+          "engine": "tavily",
+          "highlights": [
+            "Extortion and peer harassment incidents documented within school environments."
+          ]
+        }
+      ],
+      "created_at": "2026-10-29T11:13:43.685111+00:00"
+    }
+  },
+  "hitl_queue": {},
+  "audit_log": [],
+  "osint_settings": {},
+  "polemic_settings": {},
+  "system_settings": {},
+  "slang_glossary": {}
+}

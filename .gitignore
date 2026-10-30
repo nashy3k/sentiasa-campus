@@ -1,0 +1,110 @@
+# Environments and Virtualenvs
+.venv/
+env/
+venv/
+ENV/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Environment Variables & Secrets
+.env
+.env*.local
+*.key
+*.pem
+env_vars.yaml
+*.env.yaml
+make_env_yaml.py
+
+# Dependencies and Builds
+node_modules/
+dist/
+build/
+.next/
+.next-copilot/
+out/
+
+# IDE and Antigravity Artifacts
+.vscode/*
+!.vscode/settings.json
+.brain/
+artifacts/
+media/
+*.log
+*.tsbuildinfo
+
+# Isolated Event Workspaces
+hackathon-dgx-spark/
+
+# Large binaries & test media
+*.pdf
+frontend/public/demo-videos/
+tests/test_run_artifacts/
+*.tmp.driveupload/
+.tmp.driveupload/
+
+test_collateral/
+frontend/public/test_collateral/
+
+# Backup markdowns
+*_bak.md
+
+# Confidential Business Intel
+private_intel/
+
+# Internal Agents, Prompts, Skills & Rules
+.agents/
+AGENTS.md
+
+# Non-Core Root Workspaces & Internal Stubs
+landing-cyberdsa/
+package.json
+architecture_visualizer.html
+vss_video_validation_protocol.md
+task_list.md
+architecture.md
+Dockerfile
+Dockerfile.edge
+docker-compose.edge.yml
+
+# Internal Hackathon Sprint Notes, Audio Scripts & Dossiers in /docs
+docs/task_list.md
+docs/video_demo_plan_3min.md
+docs/hackathon_submission_and_judging_dossier.md
+docs/9day_polish_by_southbridgeAI.md
+docs/SouthbridgeAI.md
+docs/submission_situation_report_241026.md
+docs/maritime_vs_instabox_delegation_audit.md
+docs/sovereign_searxng_scraper_cluster_roadmap.md
+docs/git_and_cloud_deployment_hygiene.md
+docs/cloud_run_deployment_and_custom_domain_guide.md
+docs/gcp_cloud_run_operating_benchmarks.md
+docs/local_video_and_edge_testing_guide.md
+docs/vss_video_validation_protocol.md
+docs/vlm_full_video_stress_test_report.md
+docs/supply_chain_security_and_dependency_audit.md
+docs/system_design_audit_report.md
+docs/senior_systems_architect_gap_analysis.md
+docs/copilotkit_backend_evaluation_and_research.md
+docs/copilotkit_frontend_architecture_guide.md
+docs/frontend_ui_ux_audit_and_redesign_strategy.md
+docs/system_design_blueprint_sentiasa_project_mapping.md
+docs/technology_stack_and_dual_frontend_architecture.md
+docs/harness_loop_and_graph_engineering.md
+docs/palantir_deterministic_by_design_audit.md
+docs/palantir_triad_and_firestore_design_truth.md
+docs/data_lifecycle_and_counselor_action_flow.md
+docs/first_principles_systems_architecture.md
+docs/agentic_dual_horizon_architecture.md
+docs/agentic_architecture_ground_truths.md
+docs/pipeline_eli5_laymans_guide.md
+docs/left_of_bang_vs_right_of_bang_doctrine.md
+docs/deepfake_detection_and_edge_vss_architecture.md
+docs/edge_vss_and_cloud_architecture_guide.md
+
+# Local devpost scratchpad
+devpost_about_the_project.md
